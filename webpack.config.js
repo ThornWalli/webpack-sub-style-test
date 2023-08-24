@@ -29,7 +29,7 @@ export default {
     },
     plugins: [
         new VueLoaderPlugin(),
-        // webpackVueCESubStyle(),
+        webpackVueCESubStyle(),
         new HtmlWebpackPlugin({
           title: 'Output Management',
         }),
