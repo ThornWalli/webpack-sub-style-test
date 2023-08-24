@@ -16,7 +16,7 @@ export default {
     output: {
         chunkFilename: '[name].js',
         filename: '[name].js',
-        path: path.resolve(process.cwd(), 'dist'),
+        path: path.resolve(process.cwd(), 'dist/webpack'),
         publicPath: './',
         clean: true,
     },
@@ -30,9 +30,9 @@ export default {
     plugins: [
         new VueLoaderPlugin(),
         webpackVueCESubStyle(),
-        new HtmlWebpackPlugin({
-          title: 'Output Management',
-        }),
+        // new HtmlWebpackPlugin({
+        //   title: 'Output Management',
+        // })
 
     ],
 
